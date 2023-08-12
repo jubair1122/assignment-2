@@ -213,8 +213,8 @@ main {
 
 
 .hcontent {
-    width: 100%;
-    height: 300px;
+    /* width: 100%;
+    height: 300px; */
     margin-top: 200px;
     background-color: white;
 
@@ -238,8 +238,10 @@ main {
 
 .hoveritem {
     justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    
+    display: flex;
+    
+    flex-wrap: wrap;
 
     gap: 20px;
     /* display: flex;
@@ -324,6 +326,7 @@ main {
     }
 
     .hoveritem {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: start;
         font-size: 10px;
